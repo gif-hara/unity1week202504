@@ -73,6 +73,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6834149822850532184}
   - component: {fileID: 1484872856971265584}
+  - component: {fileID: 5949524743928468801}
+  - component: {fileID: 3777602246569295292}
   m_Layer: 0
   m_Name: Actor.Base
   m_TagString: Untagged
@@ -110,3 +112,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprites: []
   defaultSprite: {fileID: 0}
+--- !u!95 &5949524743928468801
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545344843016509192}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3777602246569295292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545344843016509192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3759e2aae0f7b9a47bb98fc64bf3c543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingMode: 0
+  m_WrapMode: 0
+  m_Clip: {fileID: 7400000, guid: 33dac46e2c729d34385027765d769622, type: 2}
+  m_States:
+  - clip: {fileID: 7400000, guid: 33dac46e2c729d34385027765d769622, type: 2}
+    name: Default
+    defaultState: 1
+  - clip: {fileID: 7400000, guid: df6e3e826de61db4390a30a777f17dc8, type: 2}
+    name: Down
+    defaultState: 0
+  - clip: {fileID: 7400000, guid: d94be64a5e799c04d91ea01945a2df80, type: 2}
+    name: Left
+    defaultState: 0
+  - clip: {fileID: 7400000, guid: 7150cce6cf10b4a43b50fe20403082e3, type: 2}
+    name: Right
+    defaultState: 0
+  - clip: {fileID: 7400000, guid: 525354437d94dd54ca029e357cf1e6ac, type: 2}
+    name: Up
+    defaultState: 0
