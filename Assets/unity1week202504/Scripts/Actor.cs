@@ -11,6 +11,12 @@ namespace unity1week202504
         [SerializeField]
         private GameObject defaultSprite;
 
+        [SerializeField]
+        private SimpleAnimation animationController;
+
+        [SerializeField]
+        private Animator animator;
+
         void Start()
         {
             foreach (var sprite in sprites)
@@ -29,7 +35,13 @@ namespace unity1week202504
             {
                 sprite.SetActive(sprite.name == name);
             }
+        }
 
+        public void PlayAnimation(string name, float speed)
+        {
+            animationController.GetState(name).speed = speed;
+            animationController.Rewind(name);
+            animationController.Play(name);
         }
     }
 }

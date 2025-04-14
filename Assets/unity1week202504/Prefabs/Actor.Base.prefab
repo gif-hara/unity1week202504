@@ -112,6 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprites: []
   defaultSprite: {fileID: 0}
+  animationController: {fileID: 3777602246569295292}
+  animator: {fileID: 5949524743928468801}
 --- !u!95 &5949524743928468801
 Animator:
   serializedVersion: 7
