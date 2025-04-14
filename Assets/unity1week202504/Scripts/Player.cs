@@ -1,8 +1,51 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using Cysharp.Threading.Tasks;
+using System.Threading;
+using HK;
 
 namespace unity1week202504
 {
-    public class Player : MonoBehaviour
+    public class Player
     {
+        private readonly Actor actor;
+
+        private readonly InputActionReference upAction;
+
+        private readonly InputActionReference downAction;
+
+        private readonly InputActionReference leftAction;
+
+        private readonly InputActionReference rightAction;
+
+        public Player(
+            Actor actor,
+            InputActionReference upAction,
+            InputActionReference downAction,
+            InputActionReference leftAction,
+            InputActionReference rightAction
+            )
+        {
+            this.actor = actor;
+            this.upAction = upAction;
+            this.downAction = downAction;
+            this.leftAction = leftAction;
+            this.rightAction = rightAction;
+        }
+
+        public async UniTaskVoid Attach()
+        {
+            while (true)
+            {
+                var result = await UniTask.WhenAny(
+                    upAction.action.OnPerformedAsync(),
+                    downAction.action.OnPerformedAsync(),
+                    leftAction.action.OnPerformedAsync(),
+                    rightAction.action.OnPerformedAsync()
+                );
+
+                Debug.Log(result);
+            }
+        }
     }
 }
