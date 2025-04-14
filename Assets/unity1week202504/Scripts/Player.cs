@@ -44,7 +44,22 @@ namespace unity1week202504
                     rightAction.action.OnPerformedAsync()
                 );
 
-                Debug.Log(result);
+                if (result == 0)
+                {
+                    actor.SetSprite("Up");
+                }
+                else if (result == 1)
+                {
+                    actor.SetSprite("Down");
+                }
+                else if (result == 2)
+                {
+                    actor.SetSprite("Left");
+                }
+                else if (result == 3)
+                {
+                    actor.SetSprite("Right");
+                }
             }
         }
     }
