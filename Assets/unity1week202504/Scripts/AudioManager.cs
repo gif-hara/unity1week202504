@@ -31,23 +31,23 @@ namespace HK
         [SerializeField]
         private Element.DictionaryList sfx;
 
-        public void PlayBgm(string key)
+        public void PlayBgm(string key, float scheduledTime)
         {
             bgmSource.volume = 1.0f;
             bgmSource.clip = bgm.Get(key).Clip;
-            bgmSource.Play();
+            bgmSource.PlayScheduled(AudioSettings.dspTime + scheduledTime);
         }
 
         public void StopBgm()
         {
             bgmSource.Stop();
         }
-        
+
         public void PlaySfx(string key)
         {
             sfxSource.PlayOneShot(sfx.Get(key).Clip);
         }
-        
+
         public UniTask FadeOutBgmAsync(float duration, CancellationToken cancellationToken)
         {
             return LMotion.Create(bgmSource.volume, 0, duration)
@@ -129,7 +129,7 @@ namespace HK
                 }
             }
         }
-        
+
 #if UNITY_EDITOR
         [MenuItem("Assets/Create/HK/AudioManager")]
         private static void CreateAudioManager()
