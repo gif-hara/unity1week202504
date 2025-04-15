@@ -1,6 +1,9 @@
+using System;
+using Cysharp.Threading.Tasks;
 using HK;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using ZeroMessenger;
 
 namespace unity1week202504
 {
@@ -33,29 +36,38 @@ namespace unity1week202504
         [SerializeField]
         private AudioManager audioManagerPrefab;
 
-        void Start()
+        async UniTaskVoid Start()
         {
             var audioManager = Instantiate(audioManagerPrefab);
+            var beatMessageBroker = new MessageBroker<Messages.Beat>();
             new Player(
                 player,
                 upAction,
                 downAction,
                 leftAction,
-                rightAction
-                ).Attach().Forget();
+                rightAction,
+                beatMessageBroker
+                ).Attach(destroyCancellationToken).Forget();
             new Player(
                 enemy,
                 upAction,
                 downAction,
                 leftAction,
-                rightAction
-                ).Attach().Forget();
+                rightAction,
+                beatMessageBroker
+                ).Attach(destroyCancellationToken).Forget();
 
             var musicalScore = gameRules.MusicalScores[musicalScoreIndex];
             var beatSeconds = 60.0f / musicalScore.Bpm;
             Debug.Log($"BPM: {musicalScore.Bpm}");
             Debug.Log($"Beat Seconds: {beatSeconds}");
             audioManager.PlayBgm(musicalScore.Bgm.name);
+
+            while (!destroyCancellationToken.IsCancellationRequested)
+            {
+                beatMessageBroker.Publish(new Messages.Beat(), destroyCancellationToken);
+                await UniTask.Delay(TimeSpan.FromSeconds(beatSeconds), cancellationToken: destroyCancellationToken);
+            }
         }
     }
 }
