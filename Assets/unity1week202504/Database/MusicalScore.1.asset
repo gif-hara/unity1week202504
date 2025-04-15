@@ -1,0 +1,1100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fd75ba9ea4cb444b1826756a192751, type: 3}
+  m_Name: MusicalScore.1
+  m_EditorClassIdentifier: 
+  bgm: {fileID: 8300000, guid: 5f6db8a720d96224a8c9a43eaf2917dc, type: 3}
+  bpm: 120
+  bars:
+  - timing: 0
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161039
+  - timing: 4
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161040
+  - timing: 8
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161041
+  - timing: 12
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161042
+  - timing: 16
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161043
+  - timing: 20
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161044
+  - timing: 24
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161045
+  - timing: 28
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161046
+  - timing: 32
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161047
+  - timing: 36
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161048
+  - timing: 40
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161049
+  - timing: 44
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161050
+  - timing: 48
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161051
+  - timing: 52
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161052
+  - timing: 56
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161053
+  - timing: 60
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161054
+  - timing: 64
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161055
+  - timing: 68
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161056
+  - timing: 72
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161057
+  - timing: 76
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161058
+  - timing: 80
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161059
+  - timing: 84
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161060
+  - timing: 88
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161061
+  - timing: 92
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161062
+  - timing: 96
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161063
+  - timing: 100
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161064
+  - timing: 104
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161065
+  - timing: 108
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161066
+  - timing: 112
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161067
+  - timing: 116
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161068
+  - timing: 120
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161069
+  - timing: 124
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161070
+  - timing: 128
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161071
+  - timing: 132
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161072
+  - timing: 136
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161073
+  - timing: 140
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161074
+  - timing: 144
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161075
+  - timing: 148
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161076
+  - timing: 152
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161077
+  - timing: 156
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161078
+  - timing: 160
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161079
+  - timing: 164
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161080
+  - timing: 168
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161081
+  - timing: 172
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161082
+  - timing: 176
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161083
+  - timing: 180
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161084
+  - timing: 184
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161085
+  - timing: 188
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161086
+  - timing: 192
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161087
+  - timing: 196
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161088
+  - timing: 200
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161089
+  - timing: 204
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161090
+  - timing: 208
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161091
+  - timing: 212
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161092
+  - timing: 216
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161093
+  - timing: 220
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161094
+  - timing: 224
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161095
+  - timing: 228
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161096
+  - timing: 232
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161097
+  - timing: 236
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161098
+  - timing: 240
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161099
+  - timing: 244
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161100
+  - timing: 248
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161101
+  - timing: 252
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161102
+  - timing: 256
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161103
+  - timing: 260
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161104
+  - timing: 264
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161105
+  - timing: 268
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161106
+  - timing: 272
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161107
+  - timing: 276
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161108
+  - timing: 280
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161109
+  - timing: 284
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161110
+  - timing: 288
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161111
+  - timing: 292
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161112
+  - timing: 296
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161113
+  - timing: 300
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161114
+  - timing: 304
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161115
+  - timing: 308
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161116
+  - timing: 312
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161117
+  - timing: 316
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161118
+  - timing: 320
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161119
+  - timing: 324
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161120
+  - timing: 328
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161121
+  - timing: 332
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161122
+  - timing: 336
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161123
+  - timing: 340
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161124
+  - timing: 344
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161125
+  - timing: 348
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161126
+  - timing: 352
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161127
+  - timing: 356
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161128
+  - timing: 360
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161129
+  - timing: 364
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161130
+  - timing: 368
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161131
+  - timing: 372
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161132
+  - timing: 376
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161133
+  - timing: 380
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161134
+  - timing: 384
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161135
+  - timing: 388
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161136
+  - timing: 392
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161137
+  - timing: 396
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161138
+  - timing: 400
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161139
+  - timing: 404
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161140
+  - timing: 408
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161141
+  - timing: 412
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161142
+  - timing: 416
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161143
+  - timing: 420
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161144
+  - timing: 424
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161145
+  - timing: 428
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161146
+  - timing: 432
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161147
+  - timing: 436
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161148
+  - timing: 440
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161149
+  - timing: 444
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161150
+  - timing: 448
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161151
+  - timing: 452
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161152
+  - timing: 456
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161153
+  - timing: 460
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161154
+  - timing: 464
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161155
+  - timing: 468
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161156
+  - timing: 472
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161157
+  - timing: 476
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161158
+  references:
+    version: 2
+    RefIds:
+    - rid: 5862467703586161039
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161040
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161041
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161042
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161043
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161044
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161045
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161046
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161047
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161048
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161049
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161050
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161051
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161052
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161053
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161054
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161055
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161056
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161057
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161058
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161059
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161060
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161061
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161062
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161063
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161064
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161065
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161066
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161067
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161068
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161069
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161070
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161071
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161072
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161073
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161074
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161075
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161076
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161077
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161078
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161079
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161080
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161081
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161082
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161083
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161084
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161085
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161086
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161087
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161088
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161089
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161090
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161091
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161092
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161093
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161094
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161095
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161096
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161097
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161098
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161099
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161100
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161101
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161102
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161103
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161104
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161105
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161106
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161107
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161108
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161109
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161110
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161111
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161112
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161113
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161114
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161115
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161116
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161117
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161118
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161119
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161120
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161121
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161122
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161123
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161124
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161125
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161126
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161127
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161128
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161129
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161130
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161131
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161132
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161133
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161134
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161135
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161136
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161137
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161138
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161139
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161140
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161141
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161142
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161143
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161144
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161145
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161146
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161147
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161148
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161149
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161150
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161151
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161152
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161153
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161154
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161155
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161156
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161157
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467703586161158
+      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
