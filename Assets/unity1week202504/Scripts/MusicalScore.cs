@@ -42,6 +42,7 @@ namespace unity1week202504
             }
         }
 
+#if UNITY_EDITOR
         [ContextMenu("Add Beat Event")]
         private void AddBeat()
         {
@@ -57,5 +58,6 @@ namespace unity1week202504
             }
             UnityEditor.EditorUtility.SetDirty(this);
         }
+#endif
     }
 }
