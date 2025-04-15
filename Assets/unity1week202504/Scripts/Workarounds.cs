@@ -1,4 +1,5 @@
 using System.Threading;
+using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using R3;
 using ZeroMessenger;
@@ -8,11 +9,10 @@ namespace unity1week202504
 {
     public static partial class Workarounds
     {
-        public static UniTask<T> FirstAsync<T>(this IMessageSubscriber<T> self, CancellationToken cancellationToken)
+        public static Task<T> FirstAsync<T>(this IMessageSubscriber<T> self, CancellationToken cancellationToken)
         {
             return self.ToObservable()
-                .FirstAsync(cancellationToken)
-                .AsUniTask();
+                .FirstAsync(cancellationToken);
         }
     }
 }
