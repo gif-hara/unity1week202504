@@ -62,9 +62,24 @@ namespace unity1week202504
             Debug.Log($"BPM: {musicalScore.Bpm}");
             Debug.Log($"Beat Seconds: {beatSeconds}");
             audioManager.PlayBgm(musicalScore.Bgm.name);
+            var currentBeatCount = 0;
+            var barId = 0;
 
             while (!destroyCancellationToken.IsCancellationRequested)
             {
+                if (barId < musicalScore.Bars.Count)
+                {
+                    var bar = musicalScore.Bars[barId];
+                    if (currentBeatCount >= bar.Timing)
+                    {
+                        foreach (var barEvent in bar.Events)
+                        {
+                            barEvent.Value.Invoke();
+                        }
+                        barId++;
+                    }
+                }
+                currentBeatCount++;
                 beatMessageBroker.Publish(new Messages.Beat(), destroyCancellationToken);
                 await UniTask.Delay(TimeSpan.FromSeconds(beatSeconds), cancellationToken: destroyCancellationToken);
             }
