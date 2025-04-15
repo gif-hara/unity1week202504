@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace unity1week202504
@@ -17,6 +18,8 @@ namespace unity1week202504
         [SerializeField]
         private Animator animator;
 
+        private bool beating = false;
+
         void Start()
         {
             foreach (var sprite in sprites)
@@ -29,10 +32,20 @@ namespace unity1week202504
             }
         }
 
-        public void Beat(string name, float speed)
+        public void TryBeat(string name)
+        {
+            if (beating)
+            {
+                return;
+            }
+            SetSprite(name);
+            PlayAnimationAsync(name).Forget();
+        }
+
+        public void ForceBeat(string name)
         {
             SetSprite(name);
-            PlayAnimation(name, speed);
+            PlayAnimationAsync(name).Forget();
         }
 
         public void SetSprite(string name)
@@ -43,11 +56,12 @@ namespace unity1week202504
             }
         }
 
-        public void PlayAnimation(string name, float speed)
+        public async UniTask PlayAnimationAsync(string name)
         {
-            animationController.Play(name);
+            beating = true;
             animationController.Rewind(name);
-            animationController.GetState(name).speed = speed;
+            await animationController.PlayAsync(name, destroyCancellationToken);
+            beating = false;
         }
     }
 }
