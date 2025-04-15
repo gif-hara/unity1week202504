@@ -17,6 +17,7 @@ namespace unity1week202504
 
         [SerializeField]
         private List<Bar> bars = new();
+        public IReadOnlyList<Bar> Bars => bars;
 
         /// <summary>
         /// 小節
@@ -26,9 +27,11 @@ namespace unity1week202504
         {
             [SerializeField]
             private int timing;
+            public int Timing => timing;
 
             [SerializeField]
             private string test;
+            public string Test => test;
         }
     }
 }
