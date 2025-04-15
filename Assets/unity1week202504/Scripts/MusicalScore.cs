@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using TNRD;
+using unity1week202504.BarEvents;
 using UnityEngine;
 
 namespace unity1week202504
@@ -30,8 +32,8 @@ namespace unity1week202504
             public int Timing => timing;
 
             [SerializeField]
-            private string test;
-            public string Test => test;
+            private List<SerializableInterface<IBarEvent>> events = new();
+            public IReadOnlyList<SerializableInterface<IBarEvent>> Events => events;
         }
     }
 }
