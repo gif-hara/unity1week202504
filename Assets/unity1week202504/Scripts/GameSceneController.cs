@@ -74,7 +74,7 @@ namespace unity1week202504
                     {
                         foreach (var barEvent in bar.Events)
                         {
-                            barEvent.Value.Invoke();
+                            barEvent.Value.InvokeAsync(musicalScore.Bpm, beatSeconds, destroyCancellationToken).Forget();
                         }
                         barId++;
                     }
