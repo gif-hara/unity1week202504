@@ -1,6 +1,7 @@
 using System;
 using Cysharp.Threading.Tasks;
 using HK;
+using unity1week202504.BarEvents;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using ZeroMessenger;
@@ -36,50 +37,58 @@ namespace unity1week202504
         [SerializeField]
         private AudioManager audioManagerPrefab;
 
-        async UniTaskVoid Start()
+        private MusicalScore musicalScore;
+
+        private float bgmLength;
+
+        private float beatSeconds;
+
+        private float barSeconds;
+
+        private int currentBarCount;
+
+        private int barId;
+
+        private float time;
+
+        void Start()
         {
             var audioManager = Instantiate(audioManagerPrefab);
-            var beatMessageBroker = new MessageBroker<Messages.Beat>();
-            new Player(
-                player,
-                upAction,
-                downAction,
-                leftAction,
-                rightAction,
-                beatMessageBroker
-                ).Attach(destroyCancellationToken).Forget();
-            new Enemy(
-                enemy,
-                MessageBroker<Messages.ListenDance>.Default,
-                beatMessageBroker
-                ).AttachAsync(destroyCancellationToken).Forget();
-
-            var musicalScore = gameRules.MusicalScores[musicalScoreIndex];
-            var beatSeconds = 60.0f / musicalScore.Bpm;
-            Debug.Log($"BPM: {musicalScore.Bpm}");
-            Debug.Log($"Beat Seconds: {beatSeconds}");
+            musicalScore = gameRules.MusicalScores[musicalScoreIndex];
             audioManager.PlayBgm(musicalScore.Bgm.name);
-            var currentBeatCount = 0;
-            var barId = 0;
+            bgmLength = musicalScore.Bgm.length;
+            beatSeconds = 60.0f / musicalScore.Bpm;
+            barSeconds = beatSeconds / 4;
+            currentBarCount = -1;
+            barId = 0;
+        }
 
-            while (!destroyCancellationToken.IsCancellationRequested)
+        void Update()
+        {
+            if (barId >= musicalScore.Bars.Count)
             {
-                if (barId < musicalScore.Bars.Count)
+                Debug.Log("All bars completed.");
+                return;
+            }
+            time += Time.deltaTime;
+            var barCount = (int)(time / barSeconds);
+            if (currentBarCount != barCount)
+            {
+                currentBarCount = barCount;
+                var bar = musicalScore.Bars[barId];
+                if (bar.Timing == currentBarCount)
                 {
-                    var bar = musicalScore.Bars[barId];
-                    if (currentBeatCount >= bar.Timing)
+                    foreach (var barEvent in bar.Events)
                     {
-                        foreach (var barEvent in bar.Events)
+                        if (barEvent.Value is Beat)
                         {
-                            barEvent.Value.InvokeAsync(musicalScore.Bpm, beatSeconds, destroyCancellationToken).Forget();
+                            player.Beat("Default", 5.0f);
+                            enemy.Beat("Default", 5.0f);
                         }
-                        barId++;
+                        Debug.Log($"BarEvent: {barEvent.Value.GetType().Name} Timing: {bar.Timing}");
                     }
+                    barId++;
                 }
-                Debug.Log($"Beat: {currentBeatCount}");
-                beatMessageBroker.Publish(new Messages.Beat(), destroyCancellationToken);
-                currentBeatCount++;
-                await UniTask.Delay(TimeSpan.FromSeconds(beatSeconds), cancellationToken: destroyCancellationToken);
             }
         }
     }
