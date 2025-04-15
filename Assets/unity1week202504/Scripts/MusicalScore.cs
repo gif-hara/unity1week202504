@@ -6,8 +6,8 @@ using UnityEngine;
 
 namespace unity1week202504
 {
-    [Serializable]
-    public class MusicalScore
+    [CreateAssetMenu(fileName = "MusicalScore", menuName = "unity1week202504/MusicalScore")]
+    public class MusicalScore : ScriptableObject
     {
         [SerializeField]
         private AudioClip bgm;
@@ -34,6 +34,28 @@ namespace unity1week202504
             [SerializeField]
             private List<SerializableInterface<IBarEvent>> events = new();
             public IReadOnlyList<SerializableInterface<IBarEvent>> Events => events;
+
+            public Bar(int timing, List<SerializableInterface<IBarEvent>> events)
+            {
+                this.timing = timing;
+                this.events = events;
+            }
+        }
+
+        [ContextMenu("Add Beat Event")]
+        private void AddBeat()
+        {
+            var beatCount = bpm * 4; // 1小節4拍
+            for (var i = 0; i < beatCount; i += 4)
+            {
+                var events = new List<SerializableInterface<IBarEvent>>
+                {
+                    new(new Beat())
+                };
+                var bar = new Bar(i, events);
+                bars.Add(bar);
+            }
+            UnityEditor.EditorUtility.SetDirty(this);
         }
     }
 }
