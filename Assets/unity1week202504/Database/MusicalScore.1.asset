@@ -45,24 +45,40 @@ MonoBehaviour:
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161043
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161193
   - timing: 20
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161044
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161195
   - timing: 24
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161045
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161197
   - timing: 28
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161046
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161199
   - timing: 32
     events:
     - mode: 1
@@ -1098,3 +1114,19 @@ MonoBehaviour:
     - rid: 5862467703586161158
       type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
+    - rid: 5862467703586161193
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 0
+    - rid: 5862467703586161195
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 2
+    - rid: 5862467703586161197
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 1
+    - rid: 5862467703586161199
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 3
