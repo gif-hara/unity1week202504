@@ -1117,16 +1117,16 @@ MonoBehaviour:
     - rid: 5862467703586161193
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
-        danceType: 0
+        danceType: 1
     - rid: 5862467703586161195
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
-        danceType: 2
+        danceType: 3
     - rid: 5862467703586161197
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
-        danceType: 1
+        danceType: 2
     - rid: 5862467703586161199
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
-        danceType: 3
+        danceType: 4
