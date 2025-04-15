@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using ZeroMessenger;
 
 namespace unity1week202504.BarEvents
 {
@@ -10,7 +11,6 @@ namespace unity1week202504.BarEvents
     {
         [SerializeField]
         private DanceData danceData;
-
 
         public async UniTask InvokeAsync(int bpm, float beatSeconds, CancellationToken cancellationToken = default)
         {
@@ -21,7 +21,8 @@ namespace unity1week202504.BarEvents
                 var danceElement = danceData.Elements[currentDanceIndex];
                 if (currentBeatTiming >= danceElement.Timing)
                 {
-                    Debug.Log($"Dance: {danceElement.DanceType}");
+                    MessageBroker<Messages.ListenDance>.Default.Publish(new Messages.ListenDance(danceElement.DanceType));
+                    Debug.Log($"Dance: {danceElement.DanceType} Timing: {danceElement.Timing}");
                     currentDanceIndex++;
                     if (currentDanceIndex >= danceData.Elements.Count)
                     {
