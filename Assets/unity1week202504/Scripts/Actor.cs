@@ -39,9 +39,9 @@ namespace unity1week202504
 
         public void PlayAnimation(string name, float speed)
         {
-            animationController.GetState(name).speed = speed;
-            animationController.Rewind(name);
             animationController.Play(name);
+            animationController.Rewind(name);
+            animationController.GetState(name).speed = speed;
         }
     }
 }
