@@ -48,14 +48,11 @@ namespace unity1week202504
                 rightAction,
                 beatMessageBroker
                 ).Attach(destroyCancellationToken).Forget();
-            new Player(
+            new Enemy(
                 enemy,
-                upAction,
-                downAction,
-                leftAction,
-                rightAction,
+                MessageBroker<Messages.ListenDance>.Default,
                 beatMessageBroker
-                ).Attach(destroyCancellationToken).Forget();
+                ).AttachAsync(destroyCancellationToken).Forget();
 
             var musicalScore = gameRules.MusicalScores[musicalScoreIndex];
             var beatSeconds = 60.0f / musicalScore.Bpm;
@@ -79,8 +76,9 @@ namespace unity1week202504
                         barId++;
                     }
                 }
-                currentBeatCount++;
+                Debug.Log($"Beat: {currentBeatCount}");
                 beatMessageBroker.Publish(new Messages.Beat(), destroyCancellationToken);
+                currentBeatCount++;
                 await UniTask.Delay(TimeSpan.FromSeconds(beatSeconds), cancellationToken: destroyCancellationToken);
             }
         }
