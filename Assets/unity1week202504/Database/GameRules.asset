@@ -21,11 +21,19 @@ MonoBehaviour:
       - mode: 1
         unityReference: {fileID: 0}
         rawReference:
-          rid: 5862467703586160937
+          rid: 5862467703586160948
+      - mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 5862467703586160950
   references:
     version: 2
     RefIds:
-    - rid: 5862467703586160937
+    - rid: 5862467703586160948
       type: {class: Log, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
         message: Start
+    - rid: 5862467703586160950
+      type: {class: ListenDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceData: {fileID: 11400000, guid: 84d08ee0aa4d7d94a9775d22dfd13310, type: 2}
