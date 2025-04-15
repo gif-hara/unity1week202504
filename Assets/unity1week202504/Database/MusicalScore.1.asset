@@ -755,364 +755,364 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 5862467703586161039
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161040
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161041
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161042
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161043
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161044
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161045
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161046
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161047
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161048
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161049
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161050
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161051
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161052
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161053
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161054
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161055
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161056
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161057
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161058
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161059
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161060
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161061
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161062
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161063
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161064
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161065
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161066
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161067
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161068
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161069
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161070
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161071
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161072
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161073
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161074
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161075
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161076
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161077
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161078
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161079
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161080
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161081
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161082
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161083
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161084
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161085
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161086
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161087
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161088
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161089
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161090
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161091
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161092
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161093
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161094
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161095
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161096
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161097
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161098
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161099
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161100
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161101
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161102
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161103
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161104
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161105
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161106
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161107
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161108
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161109
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161110
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161111
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161112
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161113
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161114
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161115
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161116
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161117
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161118
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161119
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161120
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161121
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161122
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161123
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161124
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161125
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161126
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161127
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161128
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161129
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161130
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161131
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161132
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161133
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161134
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161135
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161136
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161137
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161138
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161139
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161140
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161141
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161142
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161143
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161144
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161145
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161146
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161147
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161148
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161149
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161150
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161151
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161152
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161153
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161154
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161155
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161156
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161157
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161158
-      type: {class: Beat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467703586161193
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}

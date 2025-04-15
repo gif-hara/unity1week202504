@@ -51,7 +51,7 @@ namespace unity1week202504
             {
                 var events = new List<SerializableInterface<IBarEvent>>
                 {
-                    new(new Beat())
+                    new(new TryDefaultBeat())
                 };
                 var bar = new Bar(i, events);
                 bars.Add(bar);

@@ -105,7 +105,7 @@ namespace unity1week202504
                         {
                             enemy.ExecuteBeat(enemyDance.DanceType);
                         }
-                        else if (barEvent.Value is Beat)
+                        else if (barEvent.Value is TryDefaultBeat)
                         {
                             player.TryDefaultBeat();
                             enemy.TryDefaultBeat();
