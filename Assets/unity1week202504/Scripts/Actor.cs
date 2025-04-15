@@ -29,6 +29,12 @@ namespace unity1week202504
             }
         }
 
+        public void Beat(string name, float speed)
+        {
+            SetSprite(name);
+            PlayAnimation(name, speed);
+        }
+
         public void SetSprite(string name)
         {
             foreach (var sprite in sprites)
