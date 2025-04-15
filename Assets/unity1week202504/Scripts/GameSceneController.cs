@@ -37,9 +37,12 @@ namespace unity1week202504
         [SerializeField]
         private AudioManager audioManagerPrefab;
 
+        [SerializeField]
+        private float bgmScheduleTime = 0.0f;
+
         private MusicalScore musicalScore;
 
-        private float bgmLength;
+        private double startTime;
 
         private float beatSeconds;
 
@@ -49,18 +52,16 @@ namespace unity1week202504
 
         private int barId;
 
-        private float time;
-
         void Start()
         {
             var audioManager = Instantiate(audioManagerPrefab);
             musicalScore = gameRules.MusicalScores[musicalScoreIndex];
-            audioManager.PlayBgm(musicalScore.Bgm.name);
-            bgmLength = musicalScore.Bgm.length;
+            audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
             beatSeconds = 60.0f / musicalScore.Bpm;
             barSeconds = beatSeconds / 4;
             currentBarCount = -1;
             barId = 0;
+            startTime = AudioSettings.dspTime + bgmScheduleTime;
         }
 
         void Update()
@@ -70,7 +71,27 @@ namespace unity1week202504
                 Debug.Log("All bars completed.");
                 return;
             }
-            time += Time.deltaTime;
+            if (upAction.action.WasPerformedThisFrame())
+            {
+                player.ForceBeat("Up");
+            }
+            if (downAction.action.WasPerformedThisFrame())
+            {
+                player.ForceBeat("Down");
+            }
+            if (leftAction.action.WasPerformedThisFrame())
+            {
+                player.ForceBeat("Left");
+            }
+            if (rightAction.action.WasPerformedThisFrame())
+            {
+                player.ForceBeat("Right");
+            }
+            var time = AudioSettings.dspTime - startTime;
+            if (time <= 0.0f)
+            {
+                return;
+            }
             var barCount = (int)(time / barSeconds);
             if (currentBarCount != barCount)
             {
@@ -82,8 +103,8 @@ namespace unity1week202504
                     {
                         if (barEvent.Value is Beat)
                         {
-                            player.Beat("Default", 5.0f);
-                            enemy.Beat("Default", 5.0f);
+                            player.TryBeat("Default");
+                            enemy.TryBeat("Default");
                         }
                         Debug.Log($"BarEvent: {barEvent.Value.GetType().Name} Timing: {bar.Timing}");
                     }
