@@ -11,6 +11,7 @@ namespace unity1week202504.BarEvents
     {
         [SerializeField]
         private Define.DanceType danceType;
+        public Define.DanceType DanceType => danceType;
 
         public UniTask InvokeAsync(int bpm, float beatSeconds, CancellationToken cancellationToken = default)
         {

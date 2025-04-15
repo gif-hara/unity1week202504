@@ -101,7 +101,11 @@ namespace unity1week202504
                 {
                     foreach (var barEvent in bar.Events)
                     {
-                        if (barEvent.Value is Beat)
+                        if (barEvent.Value is EnemyDance enemyDance)
+                        {
+                            enemy.ForceBeat(enemyDance.DanceType.ToString());
+                        }
+                        else if (barEvent.Value is Beat)
                         {
                             player.TryBeat("Default");
                             enemy.TryBeat("Default");
