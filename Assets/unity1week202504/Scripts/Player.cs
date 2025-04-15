@@ -44,26 +44,17 @@ namespace unity1week202504
                     rightAction.action.OnPerformedAsync()
                 );
 
-                if (result == 0)
+                var stateName = result switch
                 {
-                    actor.SetSprite("Up");
-                    actor.PlayAnimation("Up", 5.0f);
-                }
-                else if (result == 1)
-                {
-                    actor.SetSprite("Down");
-                    actor.PlayAnimation("Down", 5.0f);
-                }
-                else if (result == 2)
-                {
-                    actor.SetSprite("Left");
-                    actor.PlayAnimation("Left", 5.0f);
-                }
-                else if (result == 3)
-                {
-                    actor.SetSprite("Right");
-                    actor.PlayAnimation("Right", 5.0f);
-                }
+                    0 => "Up",
+                    1 => "Down",
+                    2 => "Left",
+                    3 => "Right",
+                    _ => throw new System.NotImplementedException(),
+                };
+
+                actor.SetSprite(stateName);
+                actor.PlayAnimation(stateName, 5.0f);
             }
         }
     }
