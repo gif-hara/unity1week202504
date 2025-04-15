@@ -1,6 +1,3 @@
-using System.Threading;
-using Cysharp.Threading.Tasks;
-
 namespace unity1week202504.BarEvents
 {
     /// <summary>
@@ -8,6 +5,5 @@ namespace unity1week202504.BarEvents
     /// </summary>
     public interface IBarEvent
     {
-        UniTask InvokeAsync(int bpm, float beatSeconds, CancellationToken cancellationToken = default);
     }
 }
