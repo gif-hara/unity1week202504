@@ -32,18 +32,20 @@ namespace unity1week202504
             }
         }
 
-        public void TryBeat(string name)
+        public void TryDefaultBeat()
         {
             if (beating)
             {
                 return;
             }
+            var name = Define.DanceType.Default.ToString();
             SetSprite(name);
             PlayAnimationAsync(name).Forget();
         }
 
-        public void ForceBeat(string name)
+        public void ExecuteBeat(Define.DanceType danceType)
         {
+            var name = danceType.ToString();
             SetSprite(name);
             PlayAnimationAsync(name).Forget();
         }

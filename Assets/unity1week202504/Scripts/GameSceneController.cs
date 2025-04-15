@@ -73,19 +73,19 @@ namespace unity1week202504
             }
             if (upAction.action.WasPerformedThisFrame())
             {
-                player.ForceBeat("Up");
+                player.ExecuteBeat(Define.DanceType.Up);
             }
             if (downAction.action.WasPerformedThisFrame())
             {
-                player.ForceBeat("Down");
+                player.ExecuteBeat(Define.DanceType.Down);
             }
             if (leftAction.action.WasPerformedThisFrame())
             {
-                player.ForceBeat("Left");
+                player.ExecuteBeat(Define.DanceType.Left);
             }
             if (rightAction.action.WasPerformedThisFrame())
             {
-                player.ForceBeat("Right");
+                player.ExecuteBeat(Define.DanceType.Right);
             }
             var time = AudioSettings.dspTime - startTime;
             if (time <= 0.0f)
@@ -103,12 +103,12 @@ namespace unity1week202504
                     {
                         if (barEvent.Value is EnemyDance enemyDance)
                         {
-                            enemy.ForceBeat(enemyDance.DanceType.ToString());
+                            enemy.ExecuteBeat(enemyDance.DanceType);
                         }
                         else if (barEvent.Value is Beat)
                         {
-                            player.TryBeat("Default");
-                            enemy.TryBeat("Default");
+                            player.TryDefaultBeat();
+                            enemy.TryDefaultBeat();
                         }
                         Debug.Log($"BarEvent: {barEvent.Value.GetType().Name} Timing: {bar.Timing}");
                     }

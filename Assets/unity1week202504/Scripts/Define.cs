@@ -4,10 +4,11 @@ namespace unity1week202504
     {
         public enum DanceType
         {
-            Left = 0,
-            Right = 1,
-            Up = 2,
-            Down = 3,
+            Default = 0,
+            Left = 1,
+            Right = 2,
+            Up = 3,
+            Down = 4,
         }
     }
 }
