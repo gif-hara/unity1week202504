@@ -16,5 +16,16 @@ MonoBehaviour:
   - bgm: {fileID: 8300000, guid: 5f6db8a720d96224a8c9a43eaf2917dc, type: 3}
     bpm: 120
     bars:
-    - timing: 0
-      test: 
+    - timing: 8
+      events:
+      - mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 5862467703586160937
+  references:
+    version: 2
+    RefIds:
+    - rid: 5862467703586160937
+      type: {class: Log, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        message: Start
