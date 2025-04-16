@@ -44,8 +44,6 @@ namespace unity1week202504
 
         private MusicalScore musicalScore;
 
-        private double startTime;
-
         private float beatSeconds;
 
         private float barSeconds;
@@ -53,6 +51,10 @@ namespace unity1week202504
         private int currentBarCount;
 
         private int barId;
+
+        private Define.DanceType requiredDanceType = Define.DanceType.Default;
+
+        private float requiredTime;
 
         void Start()
         {
@@ -63,7 +65,6 @@ namespace unity1week202504
             barSeconds = beatSeconds / 4;
             currentBarCount = -1;
             barId = 0;
-            startTime = AudioSettings.dspTime + bgmScheduleTime;
         }
 
         void Update()
@@ -107,14 +108,34 @@ namespace unity1week202504
                         {
                             enemy.ExecuteBeat(enemyDance.DanceType, time);
                         }
+                        else if (barEvent.Value is RequiredDance requiredDance)
+                        {
+                            requiredDanceType = requiredDance.DanceType;
+                            requiredTime = time;
+                        }
                         else if (barEvent.Value is TryDefaultBeat)
                         {
                             player.TryDefaultBeat();
                             enemy.TryDefaultBeat();
                         }
-                        Debug.Log($"BarEvent: {barEvent.Value.GetType().Name} Timing: {bar.Timing}");
                     }
                     barId++;
+                }
+            }
+
+            if (requiredDanceType != Define.DanceType.Default)
+            {
+                var min = requiredTime - musicalScore.SuccessRange;
+                var max = requiredTime + musicalScore.SuccessRange;
+                if (player.BeatTime >= min && player.BeatTime <= max && player.CurrentDanceType == requiredDanceType)
+                {
+                    Debug.Log("Success!");
+                    requiredDanceType = Define.DanceType.Default;
+                }
+                else if (time >= max)
+                {
+                    Debug.Log("Fail!");
+                    requiredDanceType = Define.DanceType.Default;
                 }
             }
         }

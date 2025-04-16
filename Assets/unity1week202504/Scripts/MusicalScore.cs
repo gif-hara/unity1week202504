@@ -18,6 +18,10 @@ namespace unity1week202504
         public int Bpm => bpm;
 
         [SerializeField]
+        private float successRange;
+        public float SuccessRange => successRange;
+
+        [SerializeField]
         private List<Bar> bars = new();
         public IReadOnlyList<Bar> Bars => bars;
 

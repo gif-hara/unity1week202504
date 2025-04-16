@@ -9,5 +9,6 @@ namespace unity1week202504
         [SerializeField]
         private List<MusicalScore> musicalScores = new();
         public List<MusicalScore> MusicalScores => musicalScores;
+
     }
 }
