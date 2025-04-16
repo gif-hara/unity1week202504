@@ -131,6 +131,7 @@ namespace unity1week202504
                 if (player.BeatTime >= min && player.BeatTime <= max && player.CurrentDanceType == requiredDanceType)
                 {
                     Debug.Log("Success!");
+                    enemy.SetSprite("Success");
                     requiredDanceType = Define.DanceType.Default;
                 }
                 else if (time >= max)
