@@ -90,5 +90,11 @@ namespace unity1week202504
             await animationController.PlayAsync(name, destroyCancellationToken);
             beating = false;
         }
+
+        public void PlayAnimation(string name)
+        {
+            animationController.Rewind(name);
+            animationController.Play(name);
+        }
     }
 }

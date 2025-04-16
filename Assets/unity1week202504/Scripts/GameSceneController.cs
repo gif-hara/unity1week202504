@@ -1,3 +1,4 @@
+using System;
 using Cysharp.Threading.Tasks;
 using HK;
 using unity1week202504.BarEvents;
@@ -41,6 +42,9 @@ namespace unity1week202504
         [SerializeField]
         private ParticleSystem successParticle;
 
+        [SerializeField]
+        private HKUIDocument gameDocument;
+
         private bool isGamePlay = false;
 
         private AudioManager audioManager;
@@ -67,6 +71,27 @@ namespace unity1week202504
             barSeconds = beatSeconds / 4;
             currentBarCount = -1;
             barId = 0;
+            var uiViewGame = new UIViewGame(gameDocument);
+            uiViewGame.CloseLeftSpeechBalloon();
+            uiViewGame.CloseRightSpeechBalloon();
+            uiViewGame.CloseInputGuide();
+            await UniTask.Delay(TimeSpan.FromSeconds(1.0f));
+            uiViewGame.OpenLeftSpeechBalloon("今日こそ ハト子ちゃん と なかよく なるぞ!");
+            player.SetSprite("GameStart");
+            player.PlayAnimation("Default");
+            await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
+            player.SetSprite("Default");
+            uiViewGame.CloseLeftSpeechBalloon();
+            await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
+            uiViewGame.OpenRightSpeechBalloon("あたしの ダンスを マネ してね!");
+            enemy.PlayAnimation("Up");
+            enemy.SetSprite("Up");
+            await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
+            uiViewGame.CloseRightSpeechBalloon();
+            await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
+            uiViewGame.OpenInputGuide();
+            await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
+            isGamePlay = true;
             audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
         }
 
