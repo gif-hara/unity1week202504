@@ -18,6 +18,7 @@ namespace HK
     {
         [SerializeField]
         private AudioSource bgmSource;
+        public AudioSource BgmSource => bgmSource;
 
         [SerializeField]
         private AudioSource sfxSource;

@@ -40,6 +40,8 @@ namespace unity1week202504
         [SerializeField]
         private float bgmScheduleTime = 0.0f;
 
+        private AudioManager audioManager;
+
         private MusicalScore musicalScore;
 
         private double startTime;
@@ -54,7 +56,7 @@ namespace unity1week202504
 
         void Start()
         {
-            var audioManager = Instantiate(audioManagerPrefab);
+            audioManager = Instantiate(audioManagerPrefab);
             musicalScore = gameRules.MusicalScores[musicalScoreIndex];
             audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
             beatSeconds = 60.0f / musicalScore.Bpm;
@@ -87,7 +89,7 @@ namespace unity1week202504
             {
                 player.ExecuteBeat(Define.DanceType.Right);
             }
-            var time = AudioSettings.dspTime - startTime;
+            var time = audioManager.BgmSource.time;
             if (time <= 0.0f)
             {
                 return;
