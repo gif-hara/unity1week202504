@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using HK;
 using unity1week202504.BarEvents;
 using UnityEngine;
@@ -40,6 +41,8 @@ namespace unity1week202504
         [SerializeField]
         private ParticleSystem successParticle;
 
+        private bool isGamePlay = false;
+
         private AudioManager audioManager;
 
         private MusicalScore musicalScore;
@@ -56,19 +59,23 @@ namespace unity1week202504
 
         private float requiredTime;
 
-        void Start()
+        async UniTaskVoid Start()
         {
             audioManager = Instantiate(audioManagerPrefab);
             musicalScore = gameRules.MusicalScores[musicalScoreIndex];
-            audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
             beatSeconds = 60.0f / musicalScore.Bpm;
             barSeconds = beatSeconds / 4;
             currentBarCount = -1;
             barId = 0;
+            audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
         }
 
         void Update()
         {
+            if (!isGamePlay)
+            {
+                return;
+            }
             if (barId >= musicalScore.Bars.Count)
             {
                 Debug.Log("All bars completed.");
