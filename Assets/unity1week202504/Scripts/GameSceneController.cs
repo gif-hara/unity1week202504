@@ -40,6 +40,9 @@ namespace unity1week202504
         [SerializeField]
         private float bgmScheduleTime = 0.0f;
 
+        [SerializeField]
+        private ParticleSystem successParticle;
+
         private AudioManager audioManager;
 
         private MusicalScore musicalScore;
@@ -130,14 +133,15 @@ namespace unity1week202504
                 var max = requiredTime + musicalScore.SuccessRange;
                 if (player.BeatTime >= min && player.BeatTime <= max && player.CurrentDanceType == requiredDanceType)
                 {
-                    Debug.Log("Success!");
                     enemy.SetSprite("Success");
+                    audioManager.PlaySfx("Sfx.Success");
+                    successParticle.Emit(1);
                     requiredDanceType = Define.DanceType.Default;
                 }
                 else if (time >= max)
                 {
-                    Debug.Log("Fail!");
                     player.Miss();
+                    audioManager.PlaySfx("Sfx.Fail");
                     requiredDanceType = Define.DanceType.Default;
                 }
             }
