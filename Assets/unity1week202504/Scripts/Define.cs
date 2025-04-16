@@ -11,5 +11,13 @@ namespace unity1week202504
             Down = 4,
             Fail = 5,
         }
+
+        public enum GameState
+        {
+            Initialize = 0,
+            InGame = 1,
+            Lose = 2,
+            Win = 3,
+        }
     }
 }

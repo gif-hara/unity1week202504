@@ -45,7 +45,9 @@ namespace unity1week202504
         [SerializeField]
         private HKUIDocument gameDocument;
 
-        private bool isGamePlay = false;
+        private Define.GameState gameState = Define.GameState.Initialize;
+
+        private int lifeCount = 3;
 
         private AudioManager audioManager;
 
@@ -72,6 +74,7 @@ namespace unity1week202504
             currentBarCount = -1;
             barId = 0;
             var uiViewGame = new UIViewGame(gameDocument);
+            gameState = Define.GameState.Initialize;
             uiViewGame.CloseLeftSpeechBalloon();
             uiViewGame.CloseRightSpeechBalloon();
             uiViewGame.CloseInputGuide();
@@ -92,19 +95,22 @@ namespace unity1week202504
             await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
             uiViewGame.OpenInputGuide();
             await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
-            isGamePlay = true;
             audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
+            gameState = Define.GameState.InGame;
+            await UniTask.WaitWhile(this, @this => @this.gameState == Define.GameState.InGame);
+            Debug.Log($"{gameState}");
+            audioManager.StopBgm();
         }
 
         void Update()
         {
-            if (!isGamePlay)
+            if (gameState != Define.GameState.InGame)
             {
                 return;
             }
             if (barId >= musicalScore.Bars.Count)
             {
-                Debug.Log("All bars completed.");
+                gameState = Define.GameState.Win;
                 return;
             }
             var time = audioManager.BgmSource.time;
@@ -173,6 +179,11 @@ namespace unity1week202504
                     player.Miss();
                     enemy.SetSprite("Fail");
                     audioManager.PlaySfx("Sfx.Fail");
+                    lifeCount--;
+                    if (lifeCount <= 0)
+                    {
+                        gameState = Define.GameState.Lose;
+                    }
                     requiredDanceType = Define.DanceType.Default;
                 }
             }
