@@ -20,6 +20,10 @@ namespace unity1week202504
 
         private bool beating = false;
 
+        private Define.DanceType currentDanceType = Define.DanceType.Default;
+
+        private float beatTime;
+
         void Start()
         {
             foreach (var sprite in sprites)
@@ -43,11 +47,13 @@ namespace unity1week202504
             PlayAnimationAsync(name).Forget();
         }
 
-        public void ExecuteBeat(Define.DanceType danceType)
+        public void ExecuteBeat(Define.DanceType danceType, float beatTime)
         {
             var name = danceType.ToString();
             SetSprite(name);
             PlayAnimationAsync(name).Forget();
+            currentDanceType = danceType;
+            this.beatTime = beatTime;
         }
 
         public void SetSprite(string name)

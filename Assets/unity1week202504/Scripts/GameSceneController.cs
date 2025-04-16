@@ -73,23 +73,23 @@ namespace unity1week202504
                 Debug.Log("All bars completed.");
                 return;
             }
+            var time = audioManager.BgmSource.time;
             if (upAction.action.WasPerformedThisFrame())
             {
-                player.ExecuteBeat(Define.DanceType.Up);
+                player.ExecuteBeat(Define.DanceType.Up, time);
             }
             if (downAction.action.WasPerformedThisFrame())
             {
-                player.ExecuteBeat(Define.DanceType.Down);
+                player.ExecuteBeat(Define.DanceType.Down, time);
             }
             if (leftAction.action.WasPerformedThisFrame())
             {
-                player.ExecuteBeat(Define.DanceType.Left);
+                player.ExecuteBeat(Define.DanceType.Left, time);
             }
             if (rightAction.action.WasPerformedThisFrame())
             {
-                player.ExecuteBeat(Define.DanceType.Right);
+                player.ExecuteBeat(Define.DanceType.Right, time);
             }
-            var time = audioManager.BgmSource.time;
             if (time <= 0.0f)
             {
                 return;
@@ -105,7 +105,7 @@ namespace unity1week202504
                     {
                         if (barEvent.Value is EnemyDance enemyDance)
                         {
-                            enemy.ExecuteBeat(enemyDance.DanceType);
+                            enemy.ExecuteBeat(enemyDance.DanceType, time);
                         }
                         else if (barEvent.Value is TryDefaultBeat)
                         {
