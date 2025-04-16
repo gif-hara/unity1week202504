@@ -24,6 +24,8 @@ namespace unity1week202504
 
         public float BeatTime { get; private set; } = 0.0f;
 
+        private bool isMiss = false;
+
         void Start()
         {
             foreach (var sprite in sprites)
@@ -51,11 +53,26 @@ namespace unity1week202504
 
         public void ExecuteBeat(Define.DanceType danceType, float beatTime)
         {
+            if (isMiss)
+            {
+                return;
+            }
             var name = danceType.ToString();
             SetSprite(name);
             PlayAnimationAsync(name).Forget();
             CurrentDanceType = danceType;
             BeatTime = beatTime;
+        }
+
+        public void ResetMiss()
+        {
+            isMiss = false;
+        }
+
+        public void Miss()
+        {
+            SetSprite(Define.DanceType.Fail.ToString());
+            isMiss = true;
         }
 
         public void SetSprite(string name)
