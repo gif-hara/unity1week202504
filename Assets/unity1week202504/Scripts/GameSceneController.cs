@@ -88,6 +88,7 @@ namespace unity1week202504
             enemy.SetSprite("Up");
             await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
             uiViewGame.CloseRightSpeechBalloon();
+            enemy.SetSprite("Default");
             await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
             uiViewGame.OpenInputGuide();
             await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
