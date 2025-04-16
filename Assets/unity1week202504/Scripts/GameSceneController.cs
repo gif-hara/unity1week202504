@@ -141,6 +141,7 @@ namespace unity1week202504
                 else if (time >= max)
                 {
                     player.Miss();
+                    enemy.SetSprite("Fail");
                     audioManager.PlaySfx("Sfx.Fail");
                     requiredDanceType = Define.DanceType.Default;
                 }
