@@ -22,6 +22,10 @@ namespace unity1week202504
         public float SuccessRange => successRange;
 
         [SerializeField]
+        private float missTime;
+        public float MissTime => missTime;
+
+        [SerializeField]
         private List<Bar> bars = new();
         public IReadOnlyList<Bar> Bars => bars;
 

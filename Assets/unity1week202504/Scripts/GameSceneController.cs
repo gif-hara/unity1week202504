@@ -115,8 +115,8 @@ namespace unity1week202504
                         }
                         else if (barEvent.Value is TryDefaultBeat)
                         {
-                            player.TryDefaultBeat();
-                            enemy.TryDefaultBeat();
+                            player.TryDefaultBeat(time);
+                            enemy.TryDefaultBeat(time);
                         }
                     }
                     barId++;
@@ -135,6 +135,7 @@ namespace unity1week202504
                 else if (time >= max)
                 {
                     Debug.Log("Fail!");
+                    player.SetSprite(Define.DanceType.Fail.ToString());
                     requiredDanceType = Define.DanceType.Default;
                 }
             }

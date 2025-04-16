@@ -9,6 +9,7 @@ namespace unity1week202504
             Right = 2,
             Up = 3,
             Down = 4,
+            Fail = 5,
         }
     }
 }

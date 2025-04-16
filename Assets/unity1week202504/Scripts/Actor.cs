@@ -36,7 +36,7 @@ namespace unity1week202504
             }
         }
 
-        public void TryDefaultBeat()
+        public void TryDefaultBeat(float beatTime)
         {
             if (beating)
             {
@@ -45,6 +45,8 @@ namespace unity1week202504
             var name = Define.DanceType.Default.ToString();
             SetSprite(name);
             PlayAnimationAsync(name).Forget();
+            CurrentDanceType = Define.DanceType.Default;
+            BeatTime = beatTime;
         }
 
         public void ExecuteBeat(Define.DanceType danceType, float beatTime)
@@ -53,7 +55,7 @@ namespace unity1week202504
             SetSprite(name);
             PlayAnimationAsync(name).Forget();
             CurrentDanceType = danceType;
-            this.BeatTime = beatTime;
+            BeatTime = beatTime;
         }
 
         public void SetSprite(string name)
