@@ -146,6 +146,7 @@ namespace unity1week202504
                         if (barEvent.Value is EnemyDance enemyDance)
                         {
                             enemy.ExecuteBeat(enemyDance.DanceType, time);
+                            audioManager.PlaySfx("Sfx.EnemyDance");
                         }
                         else if (barEvent.Value is RequiredDance requiredDance)
                         {

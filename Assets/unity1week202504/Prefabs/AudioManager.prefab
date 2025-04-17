@@ -59,6 +59,8 @@ MonoBehaviour:
       clip: {fileID: 8300000, guid: 186e216914bce7646861f6475fb06d35, type: 3}
     - key: Sfx.Fail
       clip: {fileID: 8300000, guid: be482185b9a2c3a46967c73ca648ea14, type: 3}
+    - key: Sfx.EnemyDance
+      clip: {fileID: 8300000, guid: b8be86b10c27bb145bc6469c95f9fa5c, type: 3}
 --- !u!1 &8428131622100838511
 GameObject:
   m_ObjectHideFlags: 0
