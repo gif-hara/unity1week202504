@@ -100,6 +100,7 @@ namespace unity1week202504
             {
                 await UniTask.Delay(TimeSpan.FromSeconds(1.0f));
                 uiViewGame.OpenLeftSpeechBalloon("今日こそ ハト子ちゃん と なかよく なるぞ!");
+                audioManager.PlaySfx("Sfx.Popo");
                 player.SetSprite("Up");
                 player.PlayAnimation("Up");
                 await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
@@ -107,6 +108,7 @@ namespace unity1week202504
                 uiViewGame.CloseLeftSpeechBalloon();
                 await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
                 uiViewGame.OpenRightSpeechBalloon("あたしの ダンスを マネ してね!");
+                audioManager.PlaySfx("Sfx.Popo");
                 enemy.PlayAnimation("Up");
                 enemy.SetSprite("Up");
                 await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
