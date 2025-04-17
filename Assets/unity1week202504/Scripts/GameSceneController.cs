@@ -209,6 +209,14 @@ namespace unity1week202504
                             requiredDanceType = requiredDance.DanceType;
                             requiredTime = time;
                         }
+                        else if (barEvent.Value is OpenRightSpeechBalloon openRightSpeechBalloon)
+                        {
+                            uiViewGame.OpenRightSpeechBalloon(openRightSpeechBalloon.Message);
+                        }
+                        else if (barEvent.Value is CloseRightSpeechBalloon)
+                        {
+                            uiViewGame.CloseRightSpeechBalloon();
+                        }
                         else if (barEvent.Value is TryDefaultBeat)
                         {
                             player.ResetMiss();

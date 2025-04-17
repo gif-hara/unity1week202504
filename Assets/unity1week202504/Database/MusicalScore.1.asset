@@ -618,7 +618,7 @@ MonoBehaviour:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
-        rid: 5862467703586161102
+        rid: 5862467752044003576
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
@@ -639,6 +639,10 @@ MonoBehaviour:
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161103
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003578
   - timing: 260
     events:
     - mode: 1
@@ -735,6 +739,10 @@ MonoBehaviour:
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161119
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003580
   - timing: 324
     events:
     - mode: 1
@@ -1600,3 +1608,14 @@ MonoBehaviour:
       data:
         danceType: 3
         sfxPitch: 1.5
+    - rid: 5862467752044003576
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467752044003578
+      type: {class: OpenRightSpeechBalloon, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        message: "\u3068\u3066\u3082\u3044\u3044\u308F! \u3055\u3044\u3054 \u307E\u3067
+          \u304C\u3093\u3070\u3063\u3066!"
+    - rid: 5862467752044003580
+      type: {class: CloseRightSpeechBalloon, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
