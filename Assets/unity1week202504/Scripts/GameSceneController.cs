@@ -80,8 +80,8 @@ namespace unity1week202504
             uiViewGame.CloseInputGuide();
             await UniTask.Delay(TimeSpan.FromSeconds(1.0f));
             uiViewGame.OpenLeftSpeechBalloon("今日こそ ハト子ちゃん と なかよく なるぞ!");
-            player.SetSprite("GameStart");
-            player.PlayAnimation("Default");
+            player.SetSprite("Up");
+            player.PlayAnimation("Up");
             await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
             player.SetSprite("Default");
             uiViewGame.CloseLeftSpeechBalloon();
@@ -146,7 +146,7 @@ namespace unity1week202504
                         if (barEvent.Value is EnemyDance enemyDance)
                         {
                             enemy.ExecuteBeat(enemyDance.DanceType, time);
-                            audioManager.PlaySfx("Sfx.EnemyDance");
+                            audioManager.PlaySfx("Sfx.EnemyDance", enemyDance.SfxPitch);
                         }
                         else if (barEvent.Value is RequiredDance requiredDance)
                         {

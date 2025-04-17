@@ -44,8 +44,9 @@ namespace HK
             bgmSource.Stop();
         }
 
-        public void PlaySfx(string key)
+        public void PlaySfx(string key, float pitch = 1.0f)
         {
+            sfxSource.pitch = pitch;
             sfxSource.PlayOneShot(sfx.Get(key).Clip);
         }
 

@@ -15,6 +15,7 @@ MonoBehaviour:
   bgm: {fileID: 8300000, guid: 5f6db8a720d96224a8c9a43eaf2917dc, type: 3}
   bpm: 120
   successRange: 0.1
+  missTime: 0
   bars:
   - timing: 0
     events:
@@ -1135,18 +1136,22 @@ MonoBehaviour:
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
         danceType: 1
+        sfxPitch: 1
     - rid: 5862467703586161195
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
         danceType: 3
+        sfxPitch: 1
     - rid: 5862467703586161197
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
         danceType: 2
+        sfxPitch: 1
     - rid: 5862467703586161199
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
         danceType: 4
+        sfxPitch: 2
     - rid: 5862467730578866257
       type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:

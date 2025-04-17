@@ -9,5 +9,9 @@ namespace unity1week202504.BarEvents
         [SerializeField]
         private Define.DanceType danceType;
         public Define.DanceType DanceType => danceType;
+
+        [SerializeField]
+        private float sfxPitch = 1.0f;
+        public float SfxPitch => sfxPitch;
     }
 }
