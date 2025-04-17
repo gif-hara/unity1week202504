@@ -49,6 +49,9 @@ namespace unity1week202504
         [SerializeField]
         private bool isSkipPrologue = false;
 
+        [SerializeField]
+        private bool isInvincible = false;
+
         private Define.GameState gameState = Define.GameState.Initialize;
 
         private int lifeCount = 3;
@@ -234,7 +237,10 @@ namespace unity1week202504
                     player.Miss();
                     enemy.SetSprite("Fail");
                     audioManager.PlaySfx("Sfx.Fail");
-                    lifeCount--;
+                    if (!isInvincible)
+                    {
+                        lifeCount--;
+                    }
                     if (lifeCount <= 0)
                     {
                         gameState = Define.GameState.Lose;
@@ -242,6 +248,11 @@ namespace unity1week202504
                     requiredDanceType = Define.DanceType.Default;
                 }
             }
+
+#if DEBUG && UNITY_EDITOR
+            uiViewGame.SetBar(currentBarCount);
+            uiViewGame.SetBeat(currentBarCount / 4);
+#endif
         }
     }
 }

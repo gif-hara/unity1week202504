@@ -151,5 +151,21 @@ namespace unity1week202504
         {
             lifeElements[index].Q<SimpleAnimation>("Root").Play("Out");
         }
+
+        public void SetBar(int barId)
+        {
+            document
+                .Q<HKUIDocument>("Area.Debug")
+                .Q<TMP_Text>("Text.Bar")
+                .text = barId.ToString();
+        }
+
+        public void SetBeat(int beat)
+        {
+            document
+                .Q<HKUIDocument>("Area.Debug")
+                .Q<TMP_Text>("Text.Beat")
+                .text = beat.ToString();
+        }
     }
 }
