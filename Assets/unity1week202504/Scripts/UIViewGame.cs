@@ -167,5 +167,13 @@ namespace unity1week202504
                 .Q<TMP_Text>("Text.Beat")
                 .text = beat.ToString();
         }
+
+        public void SetBarId(int barId)
+        {
+            document
+                .Q<HKUIDocument>("Area.Debug")
+                .Q<TMP_Text>("Text.BarId")
+                .text = barId.ToString();
+        }
     }
 }

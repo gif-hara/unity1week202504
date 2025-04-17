@@ -252,6 +252,7 @@ namespace unity1week202504
 #if DEBUG && UNITY_EDITOR
             uiViewGame.SetBar(currentBarCount);
             uiViewGame.SetBeat(currentBarCount / 4);
+            uiViewGame.SetBarId(barId - 1);
 #endif
         }
     }
