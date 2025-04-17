@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgm: {fileID: 8300000, guid: 5f6db8a720d96224a8c9a43eaf2917dc, type: 3}
   bpm: 120
-  successRange: 0.1
+  successRange: 0.05
   missTime: 0
   bars:
   - timing: 0
@@ -439,48 +439,100 @@ MonoBehaviour:
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161087
-  - timing: 196
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003527
+  - timing: 194
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161088
-  - timing: 200
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003529
+  - timing: 198
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161089
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003531
+  - timing: 200
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467703586161090
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003533
   - timing: 204
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161090
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003535
   - timing: 208
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161091
-  - timing: 212
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003539
+  - timing: 210
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161092
-  - timing: 216
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003541
+  - timing: 214
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161093
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003543
+  - timing: 216
+    events:
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003544
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003546
   - timing: 220
     events:
     - mode: 1
       unityReference: {fileID: 0}
       rawReference:
         rid: 5862467703586161094
+    - mode: 1
+      unityReference: {fileID: 0}
+      rawReference:
+        rid: 5862467752044003548
   - timing: 224
     events:
     - mode: 1
@@ -1369,6 +1421,54 @@ MonoBehaviour:
       type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data: 
     - rid: 5862467752044003525
+      type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 3
+    - rid: 5862467752044003527
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 1
+        sfxPitch: 1
+    - rid: 5862467752044003529
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 2
+        sfxPitch: 1
+    - rid: 5862467752044003531
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 4
+        sfxPitch: 1
+    - rid: 5862467752044003533
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 3
+        sfxPitch: 1.5
+    - rid: 5862467752044003535
+      type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 3
+        sfxPitch: 1.5
+    - rid: 5862467752044003539
+      type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 1
+    - rid: 5862467752044003541
+      type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 2
+    - rid: 5862467752044003543
+      type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 4
+    - rid: 5862467752044003544
+      type: {class: TryDefaultBeat, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data: 
+    - rid: 5862467752044003546
+      type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
+      data:
+        danceType: 3
+    - rid: 5862467752044003548
       type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
         danceType: 3
