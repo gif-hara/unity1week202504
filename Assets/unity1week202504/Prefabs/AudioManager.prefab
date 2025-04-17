@@ -53,6 +53,8 @@ MonoBehaviour:
     list:
     - key: Bgm.Game.1
       clip: {fileID: 8300000, guid: 5f6db8a720d96224a8c9a43eaf2917dc, type: 3}
+    - key: Bgm.Title
+      clip: {fileID: 8300000, guid: 5fdd84c370fc22a4789f552275ce588d, type: 3}
   sfx:
     list:
     - key: Sfx.Success
