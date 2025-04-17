@@ -84,6 +84,8 @@ namespace unity1week202504
             uiViewGame.CloseLoseScreen();
             uiViewGame.CloseWinScreen();
 
+            await uiViewGame.PlayFadeAnimation("In.1", destroyCancellationToken);
+
             // プロローグ
 #if DEBUG && UNITY_EDITOR
             if (!isSkipPrologue)
@@ -125,6 +127,7 @@ namespace unity1week202504
                 }
                 else if (gameState == Define.GameState.Lose)
                 {
+                    audioManager.PlaySfx("Sfx.Lose");
                     uiViewGame.OpenLoseScreen();
                 }
             }

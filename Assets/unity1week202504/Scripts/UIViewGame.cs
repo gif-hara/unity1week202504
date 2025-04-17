@@ -1,3 +1,5 @@
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using HK;
 using TMPro;
 
@@ -77,6 +79,13 @@ namespace unity1week202504
         {
             var areaDocument = document.Q("Area.WinScreen");
             areaDocument.SetActive(false);
+        }
+
+        public UniTask PlayFadeAnimation(string name, CancellationToken cancellationToken)
+        {
+            var areaDocument = document.Q<SimpleAnimation>("Area.Fade");
+            areaDocument.gameObject.SetActive(true);
+            return areaDocument.PlayAsync(name, cancellationToken);
         }
     }
 }
