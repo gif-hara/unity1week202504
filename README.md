@@ -7,3 +7,4 @@
     - https://soundeffect-lab.info/
 - Font
     - https://www.lazypolarbear.com/entry/2017/06/27/022627
+    - https://azukifont.com/font/azuki.html
