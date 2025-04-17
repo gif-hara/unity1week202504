@@ -69,6 +69,8 @@ namespace unity1week202504
 
         private float requiredTime;
 
+        private UIViewGame uiViewGame;
+
         async UniTaskVoid Start()
         {
             audioManager = Instantiate(audioManagerPrefab);
@@ -77,7 +79,7 @@ namespace unity1week202504
             barSeconds = beatSeconds / 4;
             currentBarCount = -1;
             barId = 0;
-            var uiViewGame = new UIViewGame(gameDocument);
+            uiViewGame = new UIViewGame(gameDocument);
             gameState = Define.GameState.Initialize;
             uiViewGame.CloseLeftSpeechBalloon();
             uiViewGame.CloseRightSpeechBalloon();
@@ -113,6 +115,7 @@ namespace unity1week202504
             }
             // ゲーム開始
             {
+                await uiViewGame.InitializeAreaLifeAsync(lifeCount, destroyCancellationToken);
                 audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
                 gameState = Define.GameState.InGame;
             }
@@ -227,6 +230,7 @@ namespace unity1week202504
                 }
                 else if (time >= max)
                 {
+                    uiViewGame.PlayLifeElementOutAnimation(lifeCount - 1);
                     player.Miss();
                     enemy.SetSprite("Fail");
                     audioManager.PlaySfx("Sfx.Fail");

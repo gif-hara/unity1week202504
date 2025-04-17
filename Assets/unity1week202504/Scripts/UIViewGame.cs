@@ -1,7 +1,10 @@
+using System;
+using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using HK;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace unity1week202504
@@ -9,6 +12,8 @@ namespace unity1week202504
     public class UIViewGame
     {
         private readonly HKUIDocument document;
+
+        private readonly List<HKUIDocument> lifeElements = new();
 
         public UIViewGame(HKUIDocument document)
         {
@@ -112,6 +117,39 @@ namespace unity1week202504
         {
             var areaDocument = document.Q<HKUIDocument>("Area.Confirm");
             return areaDocument.Q<Button>("Button.Title").OnClickAsync(cancellationToken);
+        }
+
+        public async UniTask InitializeAreaLifeAsync(int life, CancellationToken cancellationToken)
+        {
+            var areaDocument = document.Q<HKUIDocument>("Area.Life");
+            var parent = areaDocument.Q<RectTransform>("Parent.Element");
+            var elementPrefab = areaDocument.Q<HKUIDocument>("Prefab.Element");
+            areaDocument.gameObject.SetActive(true);
+            for (var i = 0; i < parent.childCount; i++)
+            {
+                var child = parent.GetChild(i);
+                if (child != null)
+                {
+                    UnityEngine.Object.Destroy(child.gameObject);
+                }
+            }
+            for (var i = 0; i < life; i++)
+            {
+                var element = UnityEngine.Object.Instantiate(elementPrefab, parent);
+                element.Q<CanvasGroup>("Root").alpha = 0.0f;
+                element.gameObject.SetActive(true);
+                lifeElements.Add(element);
+            }
+            foreach (var i in lifeElements)
+            {
+                i.Q<SimpleAnimation>("Root").Play("In");
+                await UniTask.Delay(TimeSpan.FromSeconds(0.2f), cancellationToken: cancellationToken);
+            }
+        }
+
+        public void PlayLifeElementOutAnimation(int index)
+        {
+            lifeElements[index].Q<SimpleAnimation>("Root").Play("Out");
         }
     }
 }
