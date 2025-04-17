@@ -63,6 +63,8 @@ MonoBehaviour:
       clip: {fileID: 8300000, guid: b8be86b10c27bb145bc6469c95f9fa5c, type: 3}
     - key: Sfx.Lose
       clip: {fileID: 8300000, guid: 298521645551f2d46b13014ae94516f6, type: 3}
+    - key: Sfx.Win
+      clip: {fileID: 8300000, guid: 2d2a9d8cc6eff37439f7175a7e254beb, type: 3}
 --- !u!1 &8428131622100838511
 GameObject:
   m_ObjectHideFlags: 0

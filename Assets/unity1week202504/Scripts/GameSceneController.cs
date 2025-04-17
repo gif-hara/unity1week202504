@@ -125,6 +125,7 @@ namespace unity1week202504
                 audioManager.StopBgm();
                 if (gameState == Define.GameState.Win)
                 {
+                    audioManager.PlaySfx("Sfx.Win");
                     uiViewGame.OpenWinScreen();
                 }
                 else if (gameState == Define.GameState.Lose)
