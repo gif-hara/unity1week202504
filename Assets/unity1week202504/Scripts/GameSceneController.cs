@@ -4,6 +4,7 @@ using HK;
 using unity1week202504.BarEvents;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace unity1week202504
 {
@@ -83,6 +84,7 @@ namespace unity1week202504
             uiViewGame.CloseInputGuide();
             uiViewGame.CloseLoseScreen();
             uiViewGame.CloseWinScreen();
+            uiViewGame.CloseConfirm();
 
             await uiViewGame.PlayFadeAnimation("In.1", destroyCancellationToken);
 
@@ -129,6 +131,22 @@ namespace unity1week202504
                 {
                     audioManager.PlaySfx("Sfx.Lose");
                     uiViewGame.OpenLoseScreen();
+                }
+                await UniTask.Delay(TimeSpan.FromSeconds(2.0f));
+                uiViewGame.OpenConfirm();
+                var confirmButtonIndex = await UniTask.WhenAny(
+                    uiViewGame.OnClickRetryButtonAsync(destroyCancellationToken),
+                    uiViewGame.OnClickTitleButtonAsync(destroyCancellationToken)
+                );
+                if (confirmButtonIndex == 0)
+                {
+                    await uiViewGame.PlayFadeAnimation("Out.1", destroyCancellationToken);
+                    SceneManager.LoadScene("Game");
+                }
+                else if (confirmButtonIndex == 1)
+                {
+                    await uiViewGame.PlayFadeAnimation("Out.1", destroyCancellationToken);
+                    SceneManager.LoadScene("Title");
                 }
             }
         }

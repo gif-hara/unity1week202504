@@ -2,6 +2,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using HK;
 using TMPro;
+using UnityEngine.UI;
 
 namespace unity1week202504
 {
@@ -86,6 +87,31 @@ namespace unity1week202504
             var areaDocument = document.Q<SimpleAnimation>("Area.Fade");
             areaDocument.gameObject.SetActive(true);
             return areaDocument.PlayAsync(name, cancellationToken);
+        }
+
+        public void OpenConfirm()
+        {
+            var areaDocument = document.Q<SimpleAnimation>("Area.Confirm");
+            areaDocument.gameObject.SetActive(true);
+            areaDocument.Play("In");
+        }
+
+        public void CloseConfirm()
+        {
+            var areaDocument = document.Q("Area.Confirm");
+            areaDocument.SetActive(false);
+        }
+
+        public UniTask OnClickRetryButtonAsync(CancellationToken cancellationToken)
+        {
+            var areaDocument = document.Q<HKUIDocument>("Area.Confirm");
+            return areaDocument.Q<Button>("Button.Retry").OnClickAsync(cancellationToken);
+        }
+
+        public UniTask OnClickTitleButtonAsync(CancellationToken cancellationToken)
+        {
+            var areaDocument = document.Q<HKUIDocument>("Area.Confirm");
+            return areaDocument.Q<Button>("Button.Title").OnClickAsync(cancellationToken);
         }
     }
 }
