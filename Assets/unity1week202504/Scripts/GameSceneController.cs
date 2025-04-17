@@ -81,6 +81,8 @@ namespace unity1week202504
             uiViewGame.CloseLeftSpeechBalloon();
             uiViewGame.CloseRightSpeechBalloon();
             uiViewGame.CloseInputGuide();
+            uiViewGame.CloseLoseScreen();
+            uiViewGame.CloseWinScreen();
 
             // プロローグ
 #if DEBUG && UNITY_EDITOR
@@ -116,8 +118,15 @@ namespace unity1week202504
             }
             // ゲーム終了
             {
-                Debug.Log($"{gameState}");
                 audioManager.StopBgm();
+                if (gameState == Define.GameState.Win)
+                {
+                    uiViewGame.OpenWinScreen();
+                }
+                else if (gameState == Define.GameState.Lose)
+                {
+                    uiViewGame.OpenLoseScreen();
+                }
             }
         }
 

@@ -52,5 +52,31 @@ namespace unity1week202504
             var areaDocument = document.Q<HKUIDocument>("Area.InputGuide");
             areaDocument.gameObject.SetActive(false);
         }
+
+        public void OpenLoseScreen()
+        {
+            var areaDocument = document.Q<SimpleAnimation>("Area.LoseScreen");
+            areaDocument.gameObject.SetActive(true);
+            areaDocument.Play("In");
+        }
+
+        public void CloseLoseScreen()
+        {
+            var areaDocument = document.Q("Area.LoseScreen");
+            areaDocument.SetActive(false);
+        }
+
+        public void OpenWinScreen()
+        {
+            var areaDocument = document.Q<SimpleAnimation>("Area.WinScreen");
+            areaDocument.gameObject.SetActive(true);
+            areaDocument.Play("In");
+        }
+
+        public void CloseWinScreen()
+        {
+            var areaDocument = document.Q("Area.WinScreen");
+            areaDocument.SetActive(false);
+        }
     }
 }
