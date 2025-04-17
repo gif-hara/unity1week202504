@@ -739,6 +739,7 @@ MonoBehaviour:
   bgmScheduleTime: 1
   successParticle: {fileID: 2101584811}
   gameDocument: {fileID: 349764005}
+  isSkipPrologue: 1
 --- !u!4 &562678086
 Transform:
   m_ObjectHideFlags: 0

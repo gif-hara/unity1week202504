@@ -45,6 +45,9 @@ namespace unity1week202504
         [SerializeField]
         private HKUIDocument gameDocument;
 
+        [SerializeField]
+        private bool isSkipPrologue = false;
+
         private Define.GameState gameState = Define.GameState.Initialize;
 
         private int lifeCount = 3;
@@ -78,28 +81,44 @@ namespace unity1week202504
             uiViewGame.CloseLeftSpeechBalloon();
             uiViewGame.CloseRightSpeechBalloon();
             uiViewGame.CloseInputGuide();
-            await UniTask.Delay(TimeSpan.FromSeconds(1.0f));
-            uiViewGame.OpenLeftSpeechBalloon("今日こそ ハト子ちゃん と なかよく なるぞ!");
-            player.SetSprite("Up");
-            player.PlayAnimation("Up");
-            await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
-            player.SetSprite("Default");
-            uiViewGame.CloseLeftSpeechBalloon();
-            await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
-            uiViewGame.OpenRightSpeechBalloon("あたしの ダンスを マネ してね!");
-            enemy.PlayAnimation("Up");
-            enemy.SetSprite("Up");
-            await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
-            uiViewGame.CloseRightSpeechBalloon();
-            enemy.SetSprite("Default");
-            await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
-            uiViewGame.OpenInputGuide();
-            await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
-            audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
-            gameState = Define.GameState.InGame;
-            await UniTask.WaitWhile(this, @this => @this.gameState == Define.GameState.InGame);
-            Debug.Log($"{gameState}");
-            audioManager.StopBgm();
+
+            // プロローグ
+#if DEBUG && UNITY_EDITOR
+            if (!isSkipPrologue)
+#endif
+            {
+                await UniTask.Delay(TimeSpan.FromSeconds(1.0f));
+                uiViewGame.OpenLeftSpeechBalloon("今日こそ ハト子ちゃん と なかよく なるぞ!");
+                player.SetSprite("Up");
+                player.PlayAnimation("Up");
+                await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
+                player.SetSprite("Default");
+                uiViewGame.CloseLeftSpeechBalloon();
+                await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
+                uiViewGame.OpenRightSpeechBalloon("あたしの ダンスを マネ してね!");
+                enemy.PlayAnimation("Up");
+                enemy.SetSprite("Up");
+                await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
+                uiViewGame.CloseRightSpeechBalloon();
+                enemy.SetSprite("Default");
+                await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
+                uiViewGame.OpenInputGuide();
+                await UniTask.Delay(TimeSpan.FromSeconds(3.0f));
+            }
+            // ゲーム開始
+            {
+                audioManager.PlayBgm(musicalScore.Bgm.name, bgmScheduleTime);
+                gameState = Define.GameState.InGame;
+            }
+            // ゲーム待機
+            {
+                await UniTask.WaitWhile(this, @this => @this.gameState == Define.GameState.InGame);
+            }
+            // ゲーム終了
+            {
+                Debug.Log($"{gameState}");
+                audioManager.StopBgm();
+            }
         }
 
         void Update()
