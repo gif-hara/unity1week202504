@@ -1151,7 +1151,7 @@ MonoBehaviour:
       type: {class: EnemyDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
         danceType: 4
-        sfxPitch: 2
+        sfxPitch: 1.5
     - rid: 5862467730578866257
       type: {class: RequiredDance, ns: unity1week202504.BarEvents, asm: Assembly-CSharp}
       data:
