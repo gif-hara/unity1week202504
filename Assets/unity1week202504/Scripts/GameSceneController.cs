@@ -162,6 +162,14 @@ namespace unity1week202504
 
         void Update()
         {
+            var time = audioManager.BgmSource.clip != null ? audioManager.BgmSource.time : 0.0f;
+#if DEBUG
+            uiViewGame.SetBar(currentBarCount);
+            uiViewGame.SetBeat(currentBarCount / 4);
+            uiViewGame.SetBarId(barId - 1);
+            uiViewGame.SetGameState(gameState);
+            uiViewGame.SetBgmTime(time);
+#endif
             if (gameState != Define.GameState.InGame)
             {
                 return;
@@ -171,7 +179,6 @@ namespace unity1week202504
                 gameState = Define.GameState.Win;
                 return;
             }
-            var time = audioManager.BgmSource.time;
             if (upAction.action.WasPerformedThisFrame())
             {
                 player.ExecuteBeat(Define.DanceType.Up, time);
@@ -258,12 +265,6 @@ namespace unity1week202504
                     requiredDanceType = Define.DanceType.Default;
                 }
             }
-
-#if DEBUG && UNITY_EDITOR
-            uiViewGame.SetBar(currentBarCount);
-            uiViewGame.SetBeat(currentBarCount / 4);
-            uiViewGame.SetBarId(barId - 1);
-#endif
         }
     }
 }

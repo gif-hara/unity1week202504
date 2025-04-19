@@ -175,5 +175,21 @@ namespace unity1week202504
                 .Q<TMP_Text>("Text.BarId")
                 .text = barId.ToString();
         }
+
+        public void SetGameState(Define.GameState gameState)
+        {
+            document
+                .Q<HKUIDocument>("Area.Debug")
+                .Q<TMP_Text>("Text.GameState")
+                .text = gameState.ToString();
+        }
+
+        public void SetBgmTime(float time)
+        {
+            document
+                .Q<HKUIDocument>("Area.Debug")
+                .Q<TMP_Text>("Text.BgmTime")
+                .text = time.ToString("0.00");
+        }
     }
 }
