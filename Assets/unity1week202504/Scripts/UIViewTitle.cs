@@ -30,6 +30,22 @@ namespace unity1week202504
                 .SetActive(false);
         }
 
+        public void SetBgmVolumeSlider(float value)
+        {
+            titleDocument
+                .Q<HKUIDocument>("Area.Settings")
+                .Q<Slider>("Slider.BgmVolume")
+                .value = value;
+        }
+
+        public void SetSfxVolumeSlider(float value)
+        {
+            titleDocument
+                .Q<HKUIDocument>("Area.Settings")
+                .Q<Slider>("Slider.SfxVolume")
+                .value = value;
+        }
+
         public Observable<float> OnValueChangedBgmVolumeAsObservable()
         {
             return titleDocument

@@ -22,11 +22,25 @@ namespace unity1week202504
         {
             var uiViewTitle = new UIViewTitle(titleDocument);
             var audioManager = Instantiate(audioManagerPrefab);
+            var bgmVolume = PlayerPrefs.GetFloat("BgmVolume", 0.5f);
+            var sfxVolume = PlayerPrefs.GetFloat("SfxVolume", 0.5f);
+            audioMixer.SetFloat("BgmVolume", bgmVolume.AsAudioVolume());
+            audioMixer.SetFloat("SfxVolume", sfxVolume.AsAudioVolume());
+            uiViewTitle.SetBgmVolumeSlider(bgmVolume);
+            uiViewTitle.SetSfxVolumeSlider(sfxVolume);
             uiViewTitle.OnValueChangedBgmVolumeAsObservable()
-                .Subscribe(audioMixer, static (x, audioMixer) => audioMixer.SetFloat("BgmVolume", Mathf.Log10(x) * 20))
+                .Subscribe(audioMixer, static (x, audioMixer) =>
+                {
+                    audioMixer.SetFloat("BgmVolume", x.AsAudioVolume());
+                    PlayerPrefs.SetFloat("BgmVolume", x);
+                })
                 .RegisterTo(destroyCancellationToken);
             uiViewTitle.OnValueChangedSfxVolumeAsObservable()
-                .Subscribe(audioMixer, static (x, audioMixer) => audioMixer.SetFloat("SfxVolume", Mathf.Log10(x) * 20))
+                .Subscribe(audioMixer, static (x, audioMixer) =>
+                {
+                    audioMixer.SetFloat("SfxVolume", x.AsAudioVolume());
+                    PlayerPrefs.SetFloat("SfxVolume", x);
+                })
                 .RegisterTo(destroyCancellationToken);
 
             audioManager.PlayBgm("Bgm.Title", 0.0f);
