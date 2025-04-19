@@ -33,9 +33,11 @@ namespace unity1week202504
             uiViewTitle.CloseConfirm();
             await uiViewTitle.PlayFadeAnimationAsync("In.1", destroyCancellationToken);
             await uiViewTitle.OnClickPleaseAnyClickAsync(destroyCancellationToken);
+            audioManager.PlaySfx("Sfx.Decide");
             uiViewTitle.ClosePleaseAnyClick(destroyCancellationToken);
             uiViewTitle.OpenConfirm();
             await uiViewTitle.OnClickGameStartButtonAsync(destroyCancellationToken);
+            audioManager.PlaySfx("Sfx.Decide");
             await uiViewTitle.PlayFadeAnimationAsync("Out.1", destroyCancellationToken);
             SceneManager.LoadScene("Game");
         }

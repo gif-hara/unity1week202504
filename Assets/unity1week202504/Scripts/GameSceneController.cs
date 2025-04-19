@@ -147,6 +147,7 @@ namespace unity1week202504
                     uiViewGame.OnClickRetryButtonAsync(destroyCancellationToken),
                     uiViewGame.OnClickTitleButtonAsync(destroyCancellationToken)
                 );
+                audioManager.PlaySfx("Sfx.Decide");
                 if (confirmButtonIndex == 0)
                 {
                     await uiViewGame.PlayFadeAnimation("Out.1", destroyCancellationToken);
